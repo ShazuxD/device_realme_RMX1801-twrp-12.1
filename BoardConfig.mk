@@ -80,6 +80,8 @@ TW_USE_FSCRYPT_POLICY := 1
 PLATFORM_SECURITY_PATCH := 2127-12-31
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
+# Recovery Fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # TWRP specific build flags
 RECOVERY_SDCARD_ON_DATA := true
