@@ -17,10 +17,11 @@
 # Release name
 PRODUCT_RELEASE_NAME := RMX1801
 
-$(call inherit-product, build/target/product/embedded.mk)
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -29,7 +30,7 @@ PRODUCT_PACKAGES += \
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1801
-PRODUCT_NAME := omni_RMX1801
+PRODUCT_NAME := twrp_RMX1801
 PRODUCT_BRAND := OPPO
 PRODUCT_MODEL := RMX1801
 PRODUCT_MANUFACTURER := OPPO
