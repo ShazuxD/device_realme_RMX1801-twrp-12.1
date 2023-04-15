@@ -100,6 +100,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
 TW_INCLUDE_RESETPROP := true
+TW_TORCH_PATH := "/sys/class/leds/torch-light0"
 
 TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
@@ -122,3 +123,7 @@ BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 # TWRP DEBUG FLAGS
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# PBRB FLAGS
+PB_TORCH_PATH := "/sys/class/leds/torch-light0"
+
