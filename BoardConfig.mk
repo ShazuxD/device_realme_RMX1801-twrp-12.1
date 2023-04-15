@@ -102,14 +102,6 @@ TW_USE_TOOLBOX := true
 TW_INCLUDE_RESETPROP := true
 TW_TORCH_PATH := "/sys/class/leds/torch-light0"
 
-TARGET_RECOVERY_DEVICE_MODULES += \
-    libion \
-    libxml2
-
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
-
 # TWRP flags for notch
 TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
@@ -126,4 +118,3 @@ TARGET_USES_LOGD := true
 
 # PBRB FLAGS
 PB_TORCH_PATH := "/sys/class/leds/torch-light0"
-
