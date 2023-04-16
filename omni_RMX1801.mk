@@ -23,6 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/pb/config/common.mk)
 
+# Inherit from Realme RMX1801
+$(call inherit-product, device/realme/RMX1801/device.mk)
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
