@@ -22,6 +22,9 @@ $(call inherit-product, build/target/product/embedded.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Inherit from Realme RMX1801
+$(call inherit-product, device/realme/RMX1801/device.mk)
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
