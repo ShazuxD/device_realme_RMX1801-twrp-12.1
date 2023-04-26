@@ -58,7 +58,7 @@ service sbinqseecomd /system/bin/qseecomd
     disabled
     seclabel u:r:recovery:s0
 
-service hal_cryptoeng_oppo /vendor/bin/hw/vendor.oppo.hardware.cryptoeng@1.0-service
+service hal_cryptoeng_oppo /system/bin/hw/vendor.oppo.hardware.cryptoeng@1.0-service
     class main
     user system
     group system input sdcard_rw sdcard_r
