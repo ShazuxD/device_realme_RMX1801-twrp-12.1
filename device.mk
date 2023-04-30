@@ -4,10 +4,6 @@ LOCAL_PATH := device/realme/RMX1801
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Keystore
-PRODUCT_PACKAGES += \
-    android.system.keystore2
-
 PRODUCT_COPY_FILES += \
    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root/,out/target/product/realme/RMX1801/recovery/root)
 
